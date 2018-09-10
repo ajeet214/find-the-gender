@@ -4,6 +4,7 @@ Single Usage:
 An example of genderizing a single name could look like this.
 
 requests.get("https://api.genderize.io/?name=patrick")
+
 This would render a JSON response like the following. The count represents the number of data entries examined in order to calculate the response.
 response:  {"name":"patrick","gender":"male","probability":1,"count":2877}
 
@@ -19,6 +20,7 @@ response:
 [{"name":"patrick","gender":"male","probability":1,"count":2877},{"name":"allen","gender":"male","probability":0.99,"count":561},{"name":"sophiya","gender":"female","probability":1,"count":1}]
 
 Localization
+
 To achieve more qualified guesses, it is also possible to use localization filters to retreive a guess based only on data for a certain country or language. It's recommended to always use a filter if you have the needed data, since naming can rely heavily on demographics.
 
 The endpoint accepts two optional localization parameters.
