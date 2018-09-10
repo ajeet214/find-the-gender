@@ -1,6 +1,8 @@
 # find-the-gender
 determination of  the gender of a first name
+
 Single Usage: 
+
 An example of genderizing a single name could look like this.
 
 requests.get("https://api.genderize.io/?name=patrick")
@@ -19,7 +21,7 @@ requests.get("https://api.genderize.io/?name[0]=patrick&name[1]=allen&name[2]=so
 response: 
 [{"name":"patrick","gender":"male","probability":1,"count":2877},{"name":"allen","gender":"male","probability":0.99,"count":561},{"name":"sophiya","gender":"female","probability":1,"count":1}]
 
-Localization
+Localization:
 
 To achieve more qualified guesses, it is also possible to use localization filters to retreive a guess based only on data for a certain country or language. It's recommended to always use a filter if you have the needed data, since naming can rely heavily on demographics.
 
